@@ -208,7 +208,10 @@ match op:
     case '*' :
         print(a*b)
     case '/' :
-        print(a/b)
+        if(a==0 or b==0):
+            print("dividng by zero")
+        else:
+            print(a/b)
     case '%' :
         print(a%b)
     case _:
